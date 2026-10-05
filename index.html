@@ -104,9 +104,13 @@ p{margin:0}
 .pays{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center}
 .pays img{height:30px;width:auto;background:#fff;border-radius:7px;box-shadow:0 0 0 1px var(--line);padding:3px 6px}
 .inst{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;font-size:.95rem;color:var(--muted)}
-.inst img{height:24px;width:auto}
+
 .inst b{color:var(--ink);font-variant-numeric:tabular-nums}
 
+.bnpl{height:28px;width:auto;border-radius:7px}
+.bnpl.tamara{background:#fff;box-shadow:0 0 0 1px var(--line);padding:3px 8px}
+.pm{display:inline-flex;align-items:center;height:30px;padding:0 12px;border-radius:7px;background:#fff;color:var(--ink);box-shadow:0 0 0 1px var(--line);font-weight:700;font-size:.85rem;direction:ltr;white-space:nowrap}
+.pm.apple{background:#000;color:#fff;box-shadow:none}
 /* ٤ لقطات الباب */
 .scenes{padding-block:clamp(56px,8vw,96px) 0}
 .sc-head{text-align:center;display:grid;gap:8px;margin-bottom:24px}
@@ -155,7 +159,7 @@ p{margin:0}
 .total strong{font-size:clamp(1.6rem,6vw,2rem);white-space:nowrap;font-weight:900;color:var(--gold);font-variant-numeric:tabular-nums}
 .sum .inst{justify-content:flex-start;color:#D9D2C3}
 .sum .inst b{color:var(--paper)}
-.sum .inst img{background:#fff;border-radius:6px;padding:2px 5px}
+
 .sum .btn{width:100%}
 
 /* ٦ خطوات الدفع */
@@ -168,7 +172,7 @@ p{margin:0}
 .step p b{display:inline;font-size:inherit;color:var(--ink)}
 .step .btn{margin-top:10px}
 .step .apl{display:flex;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap}
-.step .apl img{height:30px;width:auto;background:#fff;border-radius:7px;box-shadow:0 0 0 1px var(--line);padding:3px 6px}
+.step .apl .bnpl{height:30px}
 .step[hidden]{display:none}
 
 /* أسئلة */
@@ -259,13 +263,8 @@ details p{color:var(--muted);padding-bottom:16px;max-width:62ch}
           <h2 id="a-h">نعم، <span class="g">متوفر</span> في مقبض</h2>
           <p class="sub">قفل لوزان الذكي ببصمتين: من برا تدخل بلمسة، ومن داخل ما يطلع إلا اللي سجّلت بصمته.</p>
           <div class="price"><strong>849</strong><span>ر.س</span><s>920 ر.س</s><span class="tag">شامل الضريبة</span></div>
-          <div class="inst"><img src="https://cdn.assets.salla.network/prod/admin/themes/default/assets/images/tamara_installment.png" alt="تمارا"><img src="https://cdn.assets.salla.network/prod/admin/themes/default/assets/images/tabby_installment.png" alt="تابي"><span>قسّمها على ٤ دفعات <b>212.25 ر.س</b> بدون فوائد</span></div>
-          <div class="pays" aria-label="طرق الدفع">
-            <img src="https://cdn.salla.network/images/payment/apple_pay_mini.png" alt="Apple Pay">
-            <img src="https://cdn.salla.network/images/payment/mada_mini.png" alt="مدى">
-            <img src="https://cdn.salla.network/images/payment/credit_card_mini.png" alt="بطاقة ائتمانية">
-            <img src="https://cdn.salla.network/images/payment/stc_pay_mini.png" alt="STC Pay">
-          </div>
+          <div class="inst"><img class="bnpl tamara" src="tamara.png" alt="تمارا" width="360" height="129"><img class="bnpl" src="tabby.png" alt="تابي" width="351" height="140"><span>قسّمها على ٤ دفعات <b>212.25 ر.س</b> بدون فوائد</span></div>
+          <div class="pays" aria-label="طرق الدفع"><span class="pm apple">Apple Pay</span><span class="pm">مدى</span><span class="pm">Visa / Mastercard</span><span class="pm">STC Pay</span></div>
           <a class="btn" href="#order">جهّز طلبك</a>
         </div>
         <img class="lock" src="lock.png" alt="قفل لوزان الذكي ببصمتين، مقبض داخلي وخارجي باللون الأسود" width="471" height="557">
@@ -303,7 +302,7 @@ details p{color:var(--muted);padding-bottom:16px;max-width:62ch}
           <h3>ملخص طلبك</h3>
           <div class="lines" id="lines"></div>
           <div class="total"><span>الإجمالي<br><small style="color:#A79F90">شامل الضريبة</small></span><strong id="total">849</strong></div>
-          <div class="inst"><img src="https://cdn.assets.salla.network/prod/admin/themes/default/assets/images/tamara_installment.png" alt="تمارا"><img src="https://cdn.assets.salla.network/prod/admin/themes/default/assets/images/tabby_installment.png" alt="تابي"><span>أو ٤ دفعات <b id="quarter">212.25 ر.س</b></span></div>
+          <div class="inst"><img class="bnpl tamara" src="tamara.png" alt="تمارا" width="360" height="129"><img class="bnpl" src="tabby.png" alt="تابي" width="351" height="140"><span>أو ٤ دفعات <b id="quarter">212.25 ر.س</b></span></div>
           <a class="btn" href="#pay">أكمل الطلب</a>
         </aside>
       </div>
@@ -313,7 +312,7 @@ details p{color:var(--muted);padding-bottom:16px;max-width:62ch}
         <li class="step" id="st-lock"><div><b>أضف القفل للسلة</b><p id="st-lock-txt"></p><a class="btn sm dark" data-step="st-lock" target="_blank" rel="noopener" href="https://meqbad.com/%D9%82%D9%81%D9%84-%D8%B0%D9%83%D9%8A-%D8%A8%D8%A8%D8%B5%D9%85%D8%AA%D9%8A%D9%86-%D9%84%D9%84%D8%A7%D8%AA%D8%AC%D8%A7%D9%87%D9%8A%D9%86/p858826386">افتح صفحة القفل</a></div></li>
         <li class="step" id="st-wifi" hidden><div><b>أضف جهاز الواي فاي للسلة</b><p>اضغط «أضف إلى السلة» في صفحته.</p><a class="btn sm dark" data-step="st-wifi" target="_blank" rel="noopener" href="https://meqbad.com/%D8%AC%D9%87%D8%A7%D8%B2-%D8%AA%D8%AD%D9%83%D9%85-%D9%88%D8%A7%D9%8A-%D9%81%D8%A7%D9%8A/p1107747154">افتح صفحة الجهاز</a></div></li>
         <li class="step" id="st-pay"><div><b>ادفع بلمسة</b><p>من السلة اضغط «إتمام الطلب»، اكتب عنوانك، واختر Apple Pay وأكّد ببصمة الوجه أو الإصبع. ويمديك تدفع بمدى أو تقسّط مع تمارا وتابي.</p>
-          <span class="apl"><img src="https://cdn.salla.network/images/payment/apple_pay_mini.png" alt="Apple Pay"><img src="https://cdn.salla.network/images/payment/mada_mini.png" alt="مدى"><img src="https://cdn.salla.network/images/payment/tamara_installment_mini.png" alt="تمارا"><img src="https://cdn.assets.salla.network/static/images/payment/tabby_installment_mini.png" alt="تابي"></span>
+          <span class="apl"><span class="pm apple">Apple Pay</span><span class="pm">مدى</span><img class="bnpl tamara" src="tamara.png" alt="تمارا" width="360" height="129"><img class="bnpl" src="tabby.png" alt="تابي" width="351" height="140"></span>
           <a class="btn sm" data-step="st-pay" target="_blank" rel="noopener" href="https://meqbad.com/cart">افتح السلة وادفع</a></div></li>
       </ol>
     </section>
