@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>قفل البصمتين من مقبض</title>
+<meta name="description" content="قفل لوزان الذكي ببصمتين من داخل ومن برا. يركب على الخشب والحديد والألمنيوم، تركيب في الرياض وجدة والدمام، وضمان سنتين.">
+<link rel="icon" href="https://cdn.salla.sa/xApDqe/0REQY0CwFfmGmcwZw4tEsgcXKcKKk8eXXLFphMLK.png">
+<meta property="og:title" content="قفل البصمتين من مقبض">
+<meta property="og:description" content="بصمة من داخل ومن برا. عيالك ما يطلعون بدونك، وأنت تدخل بلمسة.">
+<meta property="og:image" content="lock.png">
+<meta name="theme-color" content="#FFFDF9">
+<!-- أكواد التتبع (Snap / TikTok / Meta / Google) توضع هنا -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<style>
+@font-face{font-family:"Thmanyah Sans";font-weight:400;font-display:swap;src:url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-sans/woff2/thmanyah-sans-Regular.woff2") format("woff2")}
+@font-face{font-family:"Thmanyah Sans";font-weight:500;font-display:swap;src:url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-sans/woff2/thmanyah-sans-Medium.woff2") format("woff2")}
+@font-face{font-family:"Thmanyah Sans";font-weight:700;font-display:swap;src:url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-sans/woff2/thmanyah-sans-Bold.woff2") format("woff2")}
+@font-face{font-family:"Thmanyah Sans";font-weight:900;font-display:swap;src:url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-sans/woff2/thmanyah-sans-Black.woff2") format("woff2")}
+
+/* الإيقاع: سؤال ← بحث ← جواب (دائرة ذهبية) ← لقطات الباب ← جهّز طلبك ← ادفع بآبل باي */
+:root{
+  color-scheme:light;
+  --paper:#FFFDF9; --glow:#F7E6BC; --gold:#D6A112; --gold-deep:#B9870A;
+  --ink:#15130F; --muted:#6F675B; --chat:#EFE9E0; --line:#ECE4D4; --white:#FFFFFF; --ok:#1F8A4C;
+  --f:"Thmanyah Sans",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;
+  --s1:1.15rem; --s2:1.5rem; --s3:clamp(1.8rem,5.2vw,2.7rem); --s4:clamp(2.2rem,7.4vw,4rem);
+  --gutter:clamp(16px,4vw,40px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f);font-size:1rem;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.page{padding-inline:var(--gutter);position:relative;isolation:isolate;overflow-x:clip}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-weight:900;line-height:1.2;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1080px;margin-inline:auto}
+.g{color:var(--gold)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:8px}
+.glow{position:absolute;z-index:-1;border-radius:50%;background:radial-gradient(closest-side,var(--glow),transparent);pointer-events:none}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;font-family:var(--f);font-weight:700;text-decoration:none;background:var(--gold);color:var(--ink);border:0;border-radius:999px;padding:.75em 1.7em;font-size:var(--s1);cursor:pointer;box-shadow:0 10px 24px -10px rgba(214,161,18,.8);transition:transform .2s,background .2s}
+.btn:hover{background:var(--gold-deep);transform:translateY(-2px)}
+.btn.sm{font-size:.95rem;padding:.55em 1.25em}
+.btn.dark{background:var(--ink);color:var(--paper);box-shadow:none}
+.btn.dark:hover{background:#000}
+
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:16px;max-width:1080px;margin-inline:auto}
+.top img{height:44px;width:auto}
+
+/* ١ السؤال */
+.q{padding-block:18px 0;text-align:center}
+.q h1{font-size:var(--s4)}
+.q .lead{color:var(--muted);margin-top:8px;font-size:var(--s1)}
+.chats{position:relative;height:clamp(330px,58vw,450px);max-width:600px;margin:22px auto 0}
+.phone{position:absolute;width:min(290px,66%);background:var(--chat);border-radius:24px;overflow:hidden;box-shadow:0 24px 50px -24px rgba(60,40,0,.3),0 0 0 1px rgba(0,0,0,.04);text-align:right;animation:drop .8s cubic-bezier(.2,.9,.25,1.15) both}
+.phone header{background:#F7F7F7;padding:11px 13px 9px;display:flex;align-items:center;gap:9px}
+.av{width:32px;height:32px;border-radius:50%;background:#D5D8DD;flex:none;position:relative;overflow:hidden}
+.av::before{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:#fff;top:7px;left:10.5px}
+.av::after{content:"";position:absolute;inset:auto 6px -6px;height:17px;border-radius:50% 50% 0 0;background:#fff}
+.pn{font-weight:700;direction:ltr;unicode-bidi:isolate;font-size:.86rem;line-height:1.3}
+.st{color:var(--muted);font-size:.7rem;line-height:1}
+.phone .body{padding:11px 11px 60px;display:flex;flex-direction:column;gap:9px}
+.day{align-self:center;background:#fff;border-radius:8px;padding:0 10px;font-size:.7rem;color:var(--muted)}
+.bub{background:#fff;border-radius:12px 4px 12px 12px;padding:8px 11px 5px;max-width:90%;font-size:.93rem;line-height:1.55;align-self:flex-start;box-shadow:0 1px 0 rgba(0,0,0,.06)}
+.bub time{display:block;font-size:.64rem;color:#9a958c;text-align:left;direction:ltr}
+.typing{display:flex;gap:4px;padding:11px 13px}
+.typing i{width:7px;height:7px;border-radius:50%;background:#b9b3a9;animation:dot 1.2s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+.p1{right:0;top:0;rotate:4deg;animation-delay:.15s}
+.p2{left:0;top:36px;rotate:-4deg;animation-delay:.55s}
+.p3{left:50%;margin-left:calc(min(290px,66%) / -2);top:110px;rotate:1deg;animation-delay:.95s;z-index:2}
+@keyframes drop{from{opacity:0;translate:0 -40px;scale:.92}to{opacity:1;translate:0 0;scale:1}}
+@keyframes dot{0%,60%,100%{opacity:.3}30%{opacity:1}}
+
+/* ٢ البحث */
+.search{max-width:540px;margin:-60px auto 0;position:relative;z-index:3;background:var(--white);border-radius:24px;padding:14px;box-shadow:0 30px 60px -28px rgba(60,40,0,.38),0 0 0 1px var(--line);text-align:right}
+.sbar{display:flex;align-items:center;gap:10px;background:#F2F1EF;border-radius:999px;padding:11px 18px;font-weight:700;font-size:var(--s1);min-height:54px}
+.caret{display:inline-block;width:2px;height:1.2em;background:var(--gold);vertical-align:middle;margin-inline-start:2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.sugg{list-style:none;margin:4px 0 0;padding:0}
+.sugg li{display:flex;align-items:center;gap:10px;padding:9px 18px;border-bottom:1px solid var(--line);font-weight:500;color:#3d3a35}
+.sugg li:last-child{border:0;color:#a6a097}
+.sugg b{color:var(--ink)}
+
+/* ٣ الجواب */
+.answer{position:relative;margin-top:56px;padding:56px clamp(18px,4vw,48px) 48px;overflow:hidden;border-radius:36px;background:var(--white);box-shadow:0 0 0 1px var(--line)}
+.wipe{position:absolute;z-index:0;width:240vmax;aspect-ratio:1;border-radius:50%;background:var(--gold);left:50%;top:50%;translate:-50% -50%;scale:0;pointer-events:none}
+.answer.play .wipe{animation:wipe 1.5s cubic-bezier(.7,0,.3,1) both}
+@keyframes wipe{0%{scale:0;opacity:1}45%{scale:1;opacity:1}100%{scale:1;opacity:0}}
+.answer>*:not(.wipe):not(.fp){position:relative;z-index:1}
+.fp{position:absolute;z-index:0;top:-8%;left:-18%;width:min(640px,130%);opacity:.08;rotate:-28deg;pointer-events:none}
+.a-grid{display:grid;gap:26px;align-items:center;text-align:center}
+.a-grid .lock{width:min(330px,78%);margin-inline:auto;filter:drop-shadow(0 30px 30px rgba(0,0,0,.18))}
+.a-copy{display:grid;gap:14px;justify-items:center}
+.a-copy .logo{height:clamp(56px,10vw,80px);width:auto}
+.a-copy h2{font-size:var(--s4)}
+.a-copy .sub{color:var(--muted);font-size:var(--s1);max-width:34ch}
+.price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;justify-content:center;font-variant-numeric:tabular-nums}
+.price strong{font-size:clamp(2.3rem,7vw,3.2rem);font-weight:900;line-height:1}
+.price s{color:var(--muted)}
+.tag{background:var(--ink);color:var(--paper);border-radius:999px;padding:2px 12px;font-size:.82rem;font-weight:700}
+.pays{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center}
+.pays img{height:30px;width:auto;background:#fff;border-radius:7px;box-shadow:0 0 0 1px var(--line);padding:3px 6px}
+.inst{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;font-size:.95rem;color:var(--muted)}
+.inst img{height:24px;width:auto}
+.inst b{color:var(--ink);font-variant-numeric:tabular-nums}
+
+/* ٤ لقطات الباب */
+.scenes{padding-block:clamp(56px,8vw,96px) 0}
+.sc-head{text-align:center;display:grid;gap:8px;margin-bottom:24px}
+.sc-head h2{font-size:var(--s3)}
+.sc-head p{color:var(--muted);font-size:var(--s1)}
+.rail{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{display:grid;gap:12px;min-width:0;align-content:start}
+.frame{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:1;background:#2a221a;box-shadow:0 24px 50px -28px rgba(40,25,0,.5)}
+.frame video,.frame img{width:100%;height:100%;object-fit:cover}
+.num{position:absolute;top:12px;right:12px;width:42px;height:42px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-weight:900;font-size:1.3rem;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.side{position:absolute;top:16px;left:12px;background:rgba(255,255,255,.93);border-radius:999px;padding:2px 12px;font-weight:700;font-size:.82rem;display:flex;align-items:center;gap:6px}
+.side::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.notif{position:absolute;top:66px;inset-inline:10px;background:rgba(255,255,255,.95);border-radius:14px;padding:8px 12px;display:flex;gap:9px;align-items:center;font-size:.8rem;line-height:1.4;box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.notif .ic{width:26px;height:26px;border-radius:8px;background:var(--gold);display:grid;place-items:center;flex:none}
+.card h3{font-size:var(--s2);text-align:center}
+.card p{color:var(--muted);text-align:center;font-size:.98rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.chip{background:var(--ink);color:var(--paper);border-radius:999px;padding:2px 12px;font-weight:700;font-size:.85rem}
+.chip.on{background:var(--gold);color:var(--ink)}
+
+/* ٥ جهّز طلبك */
+.order{margin-top:clamp(64px,9vw,104px);display:grid;gap:24px}
+.order-head{text-align:center;display:grid;gap:8px}
+.order-head h2{font-size:var(--s3)}
+.order-head p{color:var(--muted);font-size:var(--s1)}
+.cfg{display:grid;grid-template-columns:1.15fr .85fr;gap:20px;align-items:start}
+.opts{display:grid;gap:12px}
+.opt{display:grid;grid-template-columns:auto 64px 1fr auto;gap:14px;align-items:center;background:var(--white);border-radius:20px;padding:14px 16px;box-shadow:0 0 0 1px var(--line);cursor:pointer;transition:box-shadow .2s,background .2s;text-align:right}
+.opt.base{cursor:default}
+.opt input{appearance:none;-webkit-appearance:none;width:26px;height:26px;border-radius:8px;border:2px solid #CFC6B5;margin:0;display:grid;place-items:center;cursor:pointer;background:#fff}
+.opt input:checked{background:var(--gold);border-color:var(--gold)}
+.opt input:checked::after{content:"";width:7px;height:12px;border:solid var(--ink);border-width:0 3px 3px 0;rotate:45deg;margin-top:-3px}
+.opt input:disabled{opacity:1}
+.opt.on{box-shadow:0 0 0 2px var(--gold);background:#FFFBF0}
+.opt .thumb{width:64px;height:64px;border-radius:14px;background:#F5F1EA;display:grid;place-items:center;overflow:hidden}
+.opt .thumb img{width:100%;height:100%;object-fit:contain}
+.opt .t{min-width:0}
+.opt .t b{display:block;font-size:1.05rem;line-height:1.35}
+.opt .t span{display:block;color:var(--muted);font-size:.86rem;line-height:1.5}
+.opt .pr{font-weight:900;font-variant-numeric:tabular-nums;white-space:nowrap}
+.sum{background:var(--ink);color:var(--paper);border-radius:24px;padding:22px;display:grid;gap:14px;position:sticky;top:calc(16px + env(safe-area-inset-top,0px))}
+.sum h3{font-size:1.2rem;font-weight:700}
+.lines{display:grid;gap:6px;font-variant-numeric:tabular-nums;font-size:.95rem}
+.lines div{display:flex;justify-content:space-between;gap:10px;color:#D9D2C3}
+.total{display:flex;justify-content:space-between;align-items:baseline;gap:10px;border-top:1px solid #3a352c;padding-top:12px}
+.total strong{font-size:clamp(1.6rem,6vw,2rem);white-space:nowrap;font-weight:900;color:var(--gold);font-variant-numeric:tabular-nums}
+.sum .inst{justify-content:flex-start;color:#D9D2C3}
+.sum .inst b{color:var(--paper)}
+.sum .inst img{background:#fff;border-radius:6px;padding:2px 5px}
+.sum .btn{width:100%}
+
+/* ٦ خطوات الدفع */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:s;max-width:760px;width:100%;margin-inline:auto}
+.step{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start;background:var(--white);border-radius:20px;padding:16px;box-shadow:0 0 0 1px var(--line);counter-increment:s}
+.step::before{content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-weight:900;font-size:1.15rem}
+.step.done::before{content:"✓";background:var(--ok);color:#fff}
+.step b{display:block;font-size:1.08rem}
+.step p{color:var(--muted);font-size:.93rem;margin-top:2px}
+.step p b{display:inline;font-size:inherit;color:var(--ink)}
+.step .btn{margin-top:10px}
+.step .apl{display:flex;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap}
+.step .apl img{height:30px;width:auto;background:#fff;border-radius:7px;box-shadow:0 0 0 1px var(--line);padding:3px 6px}
+.step[hidden]{display:none}
+
+/* أسئلة */
+.faq{margin-top:clamp(56px,8vw,96px);max-width:760px;margin-inline:auto}
+.faq h2{font-size:var(--s3);text-align:center;margin-bottom:12px}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:16px;font-weight:700;font-size:var(--s1)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.6rem;line-height:1;color:var(--gold);transition:rotate .25s}
+details[open] summary::after{rotate:45deg}
+details p{color:var(--muted);padding-bottom:16px;max-width:62ch}
+
+.final{text-align:center;padding-block:clamp(64px,10vw,110px) 140px;display:grid;gap:18px;justify-items:center}
+.final .logo{height:clamp(70px,14vw,104px);width:auto}
+.final h2{font-size:var(--s3)}
+.final .site{font-weight:700;color:var(--muted);letter-spacing:.04em;direction:ltr}
+
+.sticky{position:fixed;inset-inline:0;bottom:0;z-index:20;background:rgba(255,253,249,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 -1px 0 var(--line);padding:10px var(--gutter) calc(10px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;justify-content:space-between;gap:12px;translate:0 110%;transition:translate .35s ease}
+.sticky.show{translate:0 0}
+.sticky .p{font-weight:900;font-size:1.35rem;font-variant-numeric:tabular-nums;line-height:1.1}
+.sticky .p small{display:block;font-size:.72rem;font-weight:500;color:var(--muted)}
+
+.js .rv{transition:opacity .7s ease,translate .7s cubic-bezier(.2,.8,.2,1)}
+.js .rv.pre{opacity:.001;translate:0 36px}
+
+@media (min-width:860px){
+  .a-grid{grid-template-columns:1fr 1fr;text-align:right}
+  .a-copy{justify-items:start}
+  .a-copy .price,.a-copy .pays,.a-copy .inst{justify-content:flex-start}
+  .sticky{display:none}
+}
+@media (max-width:859px){
+  .cfg{grid-template-columns:1fr}
+  .sum{position:static}
+  .rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter);padding-bottom:8px;scrollbar-width:none}
+  .rail::-webkit-scrollbar{display:none}
+  .card{flex:0 0 78%;scroll-snap-align:center}
+  .opt{grid-template-columns:auto 52px 1fr}
+  .opt .thumb{width:52px;height:52px}
+  .opt .pr{grid-column:3;justify-self:start;margin-top:-6px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .js .rv.pre{opacity:1;translate:none}
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="glow" style="width:620px;height:620px;top:-200px;right:-260px"></div>
+  <div class="glow" style="width:560px;height:560px;top:900px;left:-280px"></div>
+  <div class="glow" style="width:700px;height:700px;top:2500px;right:-340px"></div>
+
+  <nav class="top" aria-label="مقبض">
+    <img src="logo.png" alt="مقبض Meqbad" width="560" height="250">
+    <a class="btn sm" href="#order">اطلبه الحين</a>
+  </nav>
+
+  <main class="wrap">
+    <section class="q" aria-labelledby="q-h">
+      <h1 id="q-h">نفس السؤال… <span class="g">كل يوم</span></h1>
+      <p class="lead">رسائل توصلنا يومياً من أهالي يبون باب آمن لعيالهم</p>
+      <div class="chats" aria-label="أمثلة من رسائل العملاء">
+        <article class="phone p1"><header><span class="av"></span><div><div class="pn">+966 55 ••• 4821</div><div class="st">متصل</div></div></header>
+          <div class="body"><span class="day">اليوم</span><p class="bub">السلام عليكم، عندكم قفل مناسب للأطفال؟ ما يقدرون يفتحون فيه الباب<time>9:12 PM</time></p></div></article>
+        <article class="phone p2"><header><span class="av"></span><div><div class="pn">+966 50 ••• 7713</div><div class="st">متصل</div></div></header>
+          <div class="body"><span class="day">اليوم</span><p class="bub">ولدي كل شوي يفتح الباب ويطلع للشارع! أبي حل<time>9:26 PM</time></p></div></article>
+        <article class="phone p3"><header><span class="av"></span><div><div class="pn">+966 53 ••• 1290</div><div class="st">متصل</div></div></header>
+          <div class="body"><span class="day">اليوم</span><p class="bub">أبي قفل بصمة من داخل ومن برا، متوفر عندكم؟<time>9:41 PM</time></p><div class="bub typing" aria-hidden="true"><i></i><i></i><i></i></div></div></article>
+      </div>
+      <div class="search" role="img" aria-label="بحث: قفل مناسب للأطفال ببصمتين">
+        <div class="sbar"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6F675B" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><span id="typed">قفل مناسب للأطفال ببصمتين</span><span class="caret"></span></div>
+        <ul class="sugg">
+          <li>قفل مناسب للأطفال <b>ببصمتين</b></li>
+          <li>قفل بصمة من <b>الداخل والخارج</b></li>
+          <li>قفل ذكي يمنع خروج الأطفال</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="answer" id="answer" aria-labelledby="a-h">
+      <span class="wipe" aria-hidden="true"></span>
+      <svg class="fp" id="fp" viewBox="0 0 400 400" aria-hidden="true"></svg>
+      <div class="a-grid">
+        <div class="a-copy">
+          <img class="logo" src="logo.png" alt="" width="560" height="250">
+          <h2 id="a-h">نعم، <span class="g">متوفر</span> في مقبض</h2>
+          <p class="sub">قفل لوزان الذكي ببصمتين: من برا تدخل بلمسة، ومن داخل ما يطلع إلا اللي سجّلت بصمته.</p>
+          <div class="price"><strong>849</strong><span>ر.س</span><s>920 ر.س</s><span class="tag">شامل الضريبة</span></div>
+          <div class="inst"><img src="https://cdn.assets.salla.network/prod/admin/themes/default/assets/images/tamara_installment.png" alt="تمارا"><img src="https://cdn.assets.salla.network/prod/admin/themes/default/assets/images/tabby_installment.png" alt="تابي"><span>قسّمها على ٤ دفعات <b>212.25 ر.س</b> بدون فوائد</span></div>
+          <div class="pays" aria-label="طرق الدفع">
+            <img src="https://cdn.salla.network/images/payment/apple_pay_mini.png" alt="Apple Pay">
+            <img src="https://cdn.salla.network/images/payment/mada_mini.png" alt="مدى">
+            <img src="https://cdn.salla.network/images/payment/credit_card_mini.png" alt="بطاقة ائتمانية">
+            <img src="https://cdn.salla.network/images/payment/stc_pay_mini.png" alt="STC Pay">
+          </div>
+          <a class="btn" href="#order">جهّز طلبك</a>
+        </div>
+        <img class="lock" src="lock.png" alt="قفل لوزان الذكي ببصمتين، مقبض داخلي وخارجي باللون الأسود" width="471" height="557">
+      </div>
+    </section>
+
+    <section class="scenes" aria-labelledby="s-h">
+      <header class="sc-head rv"><h2 id="s-h">شوفه على باب حقيقي</h2><p>لقطات من تركيب فعلي</p></header>
+      <div class="rail">
+        <article class="card"><div class="frame"><video muted loop playsinline preload="metadata" poster="c1.jpg" data-src="c1.mp4"></video><span class="num">١</span><span class="side">من برا</span></div>
+          <h3>أكثر من طريقة <span class="g">للفتح</span></h3><div class="chips"><span class="chip on">بصمة</span><span class="chip">رمز سري</span><span class="chip">بطاقة</span><span class="chip">جوالك</span></div></article>
+        <article class="card"><div class="frame"><video muted loop playsinline preload="none" poster="c2.jpg" data-src="c2.mp4"></video><span class="num">٢</span><span class="side">من برا</span></div>
+          <h3>بصمة على <span class="g">المقبض</span>… ويفتح</h3><p>بدون مفاتيح ولا انتظار</p></article>
+        <article class="card"><div class="frame"><video muted loop playsinline preload="none" poster="c3.jpg" data-src="c3.mp4"></video><span class="num">٣</span><span class="side">من داخل</span></div>
+          <h3>ومن داخل بعد… <span class="g">يحتاج بصمة</span></h3><p>يعني عيالك ما يطلعون بدونك</p></article>
+        <article class="card"><div class="frame"><video muted loop playsinline preload="none" poster="c4.jpg" data-src="c4.mp4"></video><span class="num">٤</span></div>
+          <h3>يركب على <span class="g">كل الأبواب</span></h3><div class="chips"><span class="chip on">خشب</span><span class="chip">حديد</span><span class="chip">ألمنيوم</span></div></article>
+        <article class="card"><div class="frame"><video muted loop playsinline preload="none" poster="c5.jpg" data-src="c5.mp4"></video><span class="num">٥</span>
+          <div class="notif"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15130F" stroke-width="2.6"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></span><div><div style="color:#6F675B;font-size:.7rem">تطبيق القفل · الآن</div>رمز دخول مؤقت لضيفك: <b>4827</b></div></div></div>
+          <h3>رموز مؤقتة <span class="g">لضيوفك</span></h3><p>ترسلها من جوالك وتنتهي بوقتها</p></article>
+        <article class="card"><div class="frame"><video muted loop playsinline preload="none" poster="c6.jpg" data-src="c6.mp4"></video><span class="num">٦</span></div>
+          <h3>ضمان <span class="g">سنتين</span></h3><p>ضمان بلاتيني، راحة بال لك ولعائلتك</p></article>
+      </div>
+    </section>
+
+    <section class="order" id="order" aria-labelledby="o-h">
+      <header class="order-head rv"><h2 id="o-h">جهّز <span class="g">طلبك</span></h2><p>اختر اللي تحتاجه، والسعر يتحدث مباشرة</p></header>
+      <div class="cfg">
+        <div class="opts">
+          <label class="opt base on"><input type="checkbox" checked disabled id="o-lock"><span class="thumb"><img src="lock.png" alt=""></span><span class="t"><b>قفل البصمتين · لوزان</b><span>بصمة من الجهتين، رمز، بطاقة، تطبيق، مفتاح طوارئ</span></span><span class="pr">849 ر.س</span></label>
+          <label class="opt" for="o-install"><input type="checkbox" id="o-install" checked><span class="thumb"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#15130F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 00-5.4 5.1L3.5 17.2a1.8 1.8 0 002.5 2.5l5.8-5.8a4 4 0 005.1-5.4l-2.6 2.6-2.3-.4-.4-2.3z"/></svg></span><span class="t"><b>نركّبه لك</b><span>فني مقبض يركبه في الرياض أو جدة أو الدمام</span></span><span class="pr" id="pr-install"></span></label>
+          <label class="opt" for="o-wifi"><input type="checkbox" id="o-wifi"><span class="thumb"><img src="https://cdn.salla.sa/xApDqe/0c7b0a22-57cd-4034-9984-b29ca2c09cd8-486.79245283019x500-e65pd5Dv6MhTcnhpVRx7VB80AbTnvhBB8yUhfGhw.jpg" alt="جهاز تحكم واي فاي"></span><span class="t"><b>جهاز التحكم واي فاي</b><span>افتح الباب وأرسل رموز الضيوف وأنت برا البيت</span></span><span class="pr" id="pr-wifi"></span></label>
+        </div>
+        <aside class="sum" aria-live="polite">
+          <h3>ملخص طلبك</h3>
+          <div class="lines" id="lines"></div>
+          <div class="total"><span>الإجمالي<br><small style="color:#A79F90">شامل الضريبة</small></span><strong id="total">849</strong></div>
+          <div class="inst"><img src="https://cdn.assets.salla.network/prod/admin/themes/default/assets/images/tamara_installment.png" alt="تمارا"><img src="https://cdn.assets.salla.network/prod/admin/themes/default/assets/images/tabby_installment.png" alt="تابي"><span>أو ٤ دفعات <b id="quarter">212.25 ر.س</b></span></div>
+          <a class="btn" href="#pay">أكمل الطلب</a>
+        </aside>
+      </div>
+
+      <div id="pay" class="order-head rv" style="margin-top:28px"><h2>اطلب وادفع بـ<span class="g">Apple Pay</span> في دقيقة</h2><p>الدفع يتم في متجر مقبض على سلة، بأمان كامل</p></div>
+      <ol class="steps" id="steps">
+        <li class="step" id="st-lock"><div><b>أضف القفل للسلة</b><p id="st-lock-txt"></p><a class="btn sm dark" data-step="st-lock" target="_blank" rel="noopener" href="https://meqbad.com/%D9%82%D9%81%D9%84-%D8%B0%D9%83%D9%8A-%D8%A8%D8%A8%D8%B5%D9%85%D8%AA%D9%8A%D9%86-%D9%84%D9%84%D8%A7%D8%AA%D8%AC%D8%A7%D9%87%D9%8A%D9%86/p858826386">افتح صفحة القفل</a></div></li>
+        <li class="step" id="st-wifi" hidden><div><b>أضف جهاز الواي فاي للسلة</b><p>اضغط «أضف إلى السلة» في صفحته.</p><a class="btn sm dark" data-step="st-wifi" target="_blank" rel="noopener" href="https://meqbad.com/%D8%AC%D9%87%D8%A7%D8%B2-%D8%AA%D8%AD%D9%83%D9%85-%D9%88%D8%A7%D9%8A-%D9%81%D8%A7%D9%8A/p1107747154">افتح صفحة الجهاز</a></div></li>
+        <li class="step" id="st-pay"><div><b>ادفع بلمسة</b><p>من السلة اضغط «إتمام الطلب»، اكتب عنوانك، واختر Apple Pay وأكّد ببصمة الوجه أو الإصبع. ويمديك تدفع بمدى أو تقسّط مع تمارا وتابي.</p>
+          <span class="apl"><img src="https://cdn.salla.network/images/payment/apple_pay_mini.png" alt="Apple Pay"><img src="https://cdn.salla.network/images/payment/mada_mini.png" alt="مدى"><img src="https://cdn.salla.network/images/payment/tamara_installment_mini.png" alt="تمارا"><img src="https://cdn.assets.salla.network/static/images/payment/tabby_installment_mini.png" alt="تابي"></span>
+          <a class="btn sm" data-step="st-pay" target="_blank" rel="noopener" href="https://meqbad.com/cart">افتح السلة وادفع</a></div></li>
+      </ol>
+    </section>
+
+    <section class="faq rv" aria-labelledby="fq-h">
+      <h2 id="fq-h">أسئلة سريعة</h2>
+      <details><summary>هل يمنع الأطفال من الطلوع؟</summary><p>نعم. المقبض الداخلي يحتاج بصمة مسجلة عشان يفتح، فما يطلع إلا اللي سجلت بصمته.</p></details>
+      <details><summary>يركب على باب حديد أو ألمنيوم؟</summary><p>نعم، متوافق مع أبواب الخشب والحديد والألمنيوم.</p></details>
+      <details><summary>أحتاج جهاز الواي فاي؟</summary><p>بدونه تتحكم بالقفل من جوالك بالبلوتوث وأنت قريب من الباب. معه تفتح الباب وترسل رموز الضيوف من أي مكان.</p></details>
+      <details><summary>مدينتي مو الرياض ولا جدة ولا الدمام</summary><p>نوصّل القفل لك، والتركيب متوفر حالياً في هالمدن الثلاث بس. شيل اختيار «نركّبه لك» واطلب بدونه.</p></details>
+    </section>
+
+    <section class="final rv" aria-labelledby="f-h">
+      <img class="logo" src="logo.png" alt="" width="560" height="250">
+      <h2 id="f-h">قفل <span class="g">البصمتين</span>… من مقبض</h2>
+      <a class="btn" href="#order">اطلبه الحين</a>
+      <span class="site">meqbad.com</span>
+    </section>
+  </main>
+</div>
+
+<div class="sticky" id="sticky">
+  <div class="p"><span id="st-total">849</span> ر.س<small>شامل الضريبة · ضمان سنتين</small></div>
+  <a class="btn sm" href="#order">أكمل الطلب</a>
+</div>
+
+<script>
+(function(){
+  /* الأسعار شاملة الضريبة — عدّلها هنا فقط */
+  var PRICE={lock:849, install:259.60, wifi:161};
+  var fmt=function(n){n=Math.round(n*100)/100;return n.toLocaleString('en-US',{minimumFractionDigits:(n%1)?2:0,maximumFractionDigits:2})};
+
+  document.documentElement.classList.add('js');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var fp=document.getElementById('fp'),ns='http://www.w3.org/2000/svg';
+  for(var i=0;i<16;i++){var r=18+i*11,gap=.35+((i*37)%7)/10,s=((i*53)%360)*Math.PI/180,a1=s+gap,a2=s+Math.PI*2-gap*.6;
+    var p=document.createElementNS(ns,'path');p.setAttribute('d','M'+(200+r*Math.cos(a1))+' '+(210+r*1.25*Math.sin(a1))+' A'+r+' '+(r*1.25)+' 0 1 1 '+(200+r*Math.cos(a2))+' '+(210+r*1.25*Math.sin(a2)));
+    p.setAttribute('fill','none');p.setAttribute('stroke','#15130F');p.setAttribute('stroke-width','4.5');p.setAttribute('stroke-linecap','round');fp.appendChild(p);}
+
+  var t=document.getElementById('typed'),full=t.textContent;
+  if(!reduce){var k=0;(function type(){if(k<=full.length){t.textContent=full.slice(0,k++);setTimeout(type,k===1?900:70);}else setTimeout(function(){k=0;type();},4200);})();}
+
+  var oi=document.getElementById('o-install'),ow=document.getElementById('o-wifi');
+  document.getElementById('pr-install').textContent='+'+fmt(PRICE.install)+' ر.س';
+  document.getElementById('pr-wifi').textContent='+'+fmt(PRICE.wifi)+' ر.س';
+  function update(){
+    var tot=PRICE.lock, html='<div><span>قفل البصمتين</span><span>'+fmt(PRICE.lock)+'</span></div>';
+    if(oi.checked){tot+=PRICE.install;html+='<div><span>التركيب</span><span>'+fmt(PRICE.install)+'</span></div>';}
+    if(ow.checked){tot+=PRICE.wifi;html+='<div><span>جهاز الواي فاي</span><span>'+fmt(PRICE.wifi)+'</span></div>';}
+    document.getElementById('lines').innerHTML=html;
+    document.getElementById('total').textContent=fmt(tot)+' ر.س';
+    document.getElementById('st-total').textContent=fmt(tot);
+    document.getElementById('quarter').textContent=fmt(tot/4)+' ر.س';
+    oi.closest('.opt').classList.toggle('on',oi.checked);ow.closest('.opt').classList.toggle('on',ow.checked);
+    document.getElementById('st-lock-txt').innerHTML=oi.checked
+      ? 'في صفحة القفل اختر <b>«تركيب بمدينة (الرياض - جدة - الدمام)»</b> ثم اضغط «أضف إلى السلة».'
+      : 'في صفحة القفل اختر <b>«ما احتاج تركيب»</b> ثم اضغط «أضف إلى السلة».';
+    document.getElementById('st-wifi').hidden=!ow.checked;
+  }
+  oi.addEventListener('change',update);ow.addEventListener('change',update);update();
+  [].forEach.call(document.querySelectorAll('[data-step]'),function(a){a.addEventListener('click',function(){document.getElementById(a.dataset.step).classList.add('done');});});
+
+  var ans=document.getElementById('answer'),st=document.getElementById('sticky'),ord=document.getElementById('order');
+  var showBar=function(){var a=ans.getBoundingClientRect(),o=ord.getBoundingClientRect();st.classList.toggle('show',a.bottom<0&&!(o.top<innerHeight&&o.bottom>0));};
+  addEventListener('scroll',showBar,{passive:true});showBar();
+
+  if(!('IntersectionObserver' in window)){[].forEach.call(document.querySelectorAll('video[data-src]'),function(v){v.src=v.dataset.src});return;}
+  var rv=[].slice.call(document.querySelectorAll('.rv'));
+  rv.forEach(function(el){if(el.getBoundingClientRect().top>innerHeight)el.classList.add('pre');});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target);}});},{threshold:.1});
+  rv.forEach(function(el){io.observe(el)});
+
+  var ia=new IntersectionObserver(function(es){if(es[0].isIntersecting&&!reduce){ans.classList.add('play');ia.disconnect();}},{threshold:.35});ia.observe(ans);
+
+  var iv=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;
+    if(e.isIntersecting){if(!v.getAttribute('src'))v.src=v.dataset.src;if(!reduce){var pr=v.play();if(pr&&pr.catch)pr.catch(function(){});}}else v.pause();});},{threshold:.5});
+  [].forEach.call(document.querySelectorAll('video[data-src]'),function(v){iv.observe(v)});
+})();
+</script>
+</body>
+</html>
